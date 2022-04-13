@@ -16,12 +16,12 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "동물자유연대"
+title                    : "국립고궁박물관"
 title_separator          : "-"
 subtitle                 : "portfolio"# site tagline that appears below site title in masthead
 name                     : "Choi Jiyun"
 description              : "An amazing website."
-url                      : "https://dodariman.github.io/animals/"# the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://dodariman.github.io/gogung/"# the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
