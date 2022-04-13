@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+.blind {position:absolute; top:0px; left:-10000px;font-size:0;line-height:0;}
+.clear-fix::after {content: ""; display: block; clear: both;}
+
+/* 글자색 */
+.gray3 {color:#333333 !important;}
+.gray56 {color:#565656 !important;}
+.gray51 {color:#515151 !important;}
+.gray6 {color:#666666 !important;}
+.gray0 {color:#000000 !important;}
+
+.brown1 {color: #dbb671 !important;}
+.brown2 {color: #bb9754 !important;}
+.brown3 {color: #795538 !important;}
+.brown4 {color: #7f5b1b !important;}
+
+/* 글자굵기 */
+.bold7 {font-weight:700; color:#333;}
+.bold8 {font-weight:800; color:#333;}
+.bold9 {font-weight:900; color:#333;}
+
+/* 글자크기 */
+.fz12 {font-size:12px !important;}
+.fz13 {font-size:13px !important;}
+.fz14 {font-size:14px !important;}
+.fz15 {font-size:15px !important;}
+.fz20 {font-size:20px !important;}
+.fz32 {font-size:32px !important;}
+
+/* 마진 */
+.mgt10 {margin-top:10px !important;}
+.mgt15 {margin-top:15px !important;}
+.mgt20 {margin-top:20px !important;}
+.mgt30 {margin-top:30px !important;}
+.mgt35 {margin-top:35px !important;}
+
+.mgr0 {margin-right:0 !important;}
+.mgr14 {margin-right:14px !important;}
+
+.mgb5 {margin-bottom:5px !important;}
+.mgb20 {margin-bottom:20px !important;}
+.mgb25 {margin-bottom:25px !important;}
+.mgb30 {margin-bottom:30px !important;}
+
+.mg0 {margin-left:0 !important;}
+.mgl5 {margin-left:5px !important;}
+.mgl14 {margin-left:14px !important;}
+
+/* 패딩 */
+.pdt0 {padding-top: 0.1px !important;}
+
+.pdl0 {padding-left: 0px !important;}
+
+.pdr0 {padding-right: 0px !important;}

@@ -1,0 +1,353 @@
+
+/* 눈누폰트 */
+@import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
+@import url("http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css");/* 나눔명조 'Nanum Myeongjo', serif; */
+
+@import url("http://fonts.googleapis.com/earlyaccess/notosanskr.css");
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+/* 폰트어썸 */
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: '맑은 고딕','Malgun Gothic',돋움,Dotum,'Apple SD Gothic Neo',sans-serif;
+  color:#333;
+  font-size:12px;
+}
+form * {
+  font: inherit;
+  color: inherit;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+label,button {
+  cursor: pointer;
+}
+button {
+  border: 0 none;
+}
+input[type="text"]:focus {
+  outline: 0 none;
+}
+
+.blind {
+  position: absolute;
+  top: 0px;
+  left: -10000px;
+  font-size: 0;
+  line-height: 0;
+}
+.clear-fix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* skip-navi */
+.skip-navi a {
+  position: absolute;
+  top: -200px;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  height: 45px;
+  line-height: 45px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #000;
+
+}
+.skip-navi a:focus{
+  z-index: 99999;
+  top: 0;
+}
+
+/* header */
+.header {
+  background-color: #fff;
+  min-width: 1240px;
+  width: 100%;
+  height: 115px;
+  border-bottom: 1px solid #ccc;
+  position: fixed;
+  top: 0;
+  z-index: 9000;
+}
+.header::before{
+content:"";
+display:block;
+height: 6px;
+width: 100%;
+background-color: #555;
+}
+.header::after {
+content: "";
+background: url("../images/header/bg_sky.png") no-repeat left top;
+margin: 0 auto;
+width: 1240px;
+height: 6px;
+position: absolute;
+left: 0;
+right: 0;
+top: 0;
+}
+/* 로고 */
+.logo {
+  position: absolute;
+  top: 53px;
+  left: 22px;
+}
+/* 검색창, 탑-메뉴*/
+.header-top {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 17px 24px 23px 0;
+  font-size: 13px;
+  letter-spacing:-0.6px;
+}
+.search{
+  float: left;
+  margin-left: -215px;
+  padding-top: 5px;
+  width: 210px;
+  height: 32px;
+  position: relative;
+}
+.search:hover{
+  border: 1px solid #e09462;
+}
+.search-text{
+  position: absolute;
+  top: 2.5px;
+  left: 15px;
+  width: 188px;
+  height: 26px;
+  border: none;
+}
+.search-btn{
+  background: url("../images/header/icon_search_top.png") no-repeat center;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: 5px;
+  top: 0;
+}
+.utill li {
+  display: inline-block;
+  margin-left: 18px;
+  padding-left:18px;
+  position: relative;
+  vertical-align: middle;
+}
+.utill li:first-of-type {
+  margin-left: 0;
+}
+.utill li::before{
+  content: "";
+  background: #ccc;
+  position: absolute;
+  width:1px;
+  height: 14px;
+  left: 0;
+}
+.utill li:last-of-type::before{
+  top: 10px;
+}
+.language a {
+  padding-right: 12px;
+  background: url("../images/header/icon_arrowDown.png") no-repeat right 60%;
+}
+/* nav */
+.navigation{
+  position: relative;
+  width: 1240px;
+  top: 53px;
+  left: 0;
+  margin: auto;
+}
+.navigation-bg{
+  width: 100%;
+  height: 340px;
+  border-bottom: 1px solid #ccc;
+  top: 115px;
+}
+/* 메인서브관련 display-------------------------*/
+.navigation-bg, .main-menu .sub{
+  position: absolute;
+  background-color: #fff;
+  display: none;
+}
+.navigation-bg p{
+  width: 1240px;
+  margin: 0 auto;
+}
+.navigation-bg p span{
+  display: block;
+}
+.navigation-bg p span:nth-child(1) {
+  font:26px 'Nanum Myeongjo', serif;
+  padding-top:37px;
+}
+.navigation-bg p span:nth-child(2) {
+  padding-top: 18px;
+  line-height: 18px;
+  font-size: 13px;
+  color: #666;
+}
+.main-menu{
+  position: absolute;
+  text-align:left;
+  font-size: 0;
+  top: 0;
+  right: 0;
+  width: 1015px;
+  margin-right: 0.1px;
+}
+.main-menu >li{
+  font-size: 12px;
+  width: 130px;
+  height: 55px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
+.menu-title {
+  font:20px 'Noto Sans KR', sans-serif;
+  font-weight:500;
+}
+.main-menu > li:nth-of-type(1):hover::after,
+.main-menu > li:nth-of-type(2):hover::after,
+.main-menu > li:nth-of-type(3):hover::after,
+.main-menu > li:nth-of-type(4):hover::after,
+.main-menu > li:nth-of-type(5):hover::after,
+.main-menu > li:nth-of-type(6):hover::after,
+.main-menu > li:nth-of-type(7):hover::after {
+  content: "";
+  width: 145px;
+  height: 7px;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  display: block;
+  background: url("../images/header/bg_gnb.png") no-repeat left bottom;
+  z-index: 5555;
+}
+.main-menu .sub {
+  top:56px;
+  width: 145px;
+  height: 339px;
+  padding: 30px 0 0 10px;
+  text-align: left;
+  border-left: 1px solid #ccc;
+  font-size: 14px;
+  letter-spacing: -1px;
+  vertical-align:top;
+}
+.main-menu .sub li{
+  line-height: 30px;
+}
+/* 스케줄 */
+.schedule {
+  position: absolute;
+  right: 25px;
+  top: 60px;
+}
+
+/* footer */
+.footer-bg {
+  background-color: #e8e8e8;
+  position: relative;
+}
+.footer {
+  width: 1240px;
+  height: 189px;
+  margin: 0 auto;
+}
+.footer-box1 ul {
+  width: 923px;
+  height: 62px;
+  float: left;
+  line-height: 62px;
+}
+.footer-box1 li {
+  float: left;
+  margin: auto;
+}
+.footer-right {
+  /* width: 317px; */ /* 수정함/삭제 */
+  height: 62px;
+  float: right;
+  line-height: 62px;
+  font-size: 13.5px;
+  /* padding-left: 36px; */ /* 수정함/삭제 */
+}
+.footer-right select{
+  width: 250px;
+  height: 30px;
+  background-color: inherit;
+  border: 1px solid #d1d1d1;
+   /* 수정함/삭제 */
+}
+.footer-bg::before{
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #d1d1d1;
+  position: absolute;
+  top: 60px;
+  left: 0;
+}
+.btn-move {
+  border: 1px solid #d1d1d1;
+  padding: auto 0; /* 수정함 */
+  height: 30px;
+  width: 60px;
+  background-color: inherit;
+}
+.morelink li {
+  padding-right: 10px;
+  font-size: 14.5px;
+}
+.bottom-logo {
+  width: 240px;
+  float: left;
+  margin-top: 29px;
+}
+.bottom-text {
+  width: 505px;
+  margin-top: 26px;
+  margin-left: 41px;
+  float: left;
+  font-size: 12px;
+}
+.bottom-site, .bottom-text {
+  vertical-align: middle;
+}
+.bottom-site {
+  width: 337px;
+  height: 127px;
+  float: right;
+  line-height: 127px;
+}
+.bottom-site img {
+  margin-right: 30px;
+}
+.bottom-site i {
+  font-size: 26px;
+  display: inline-block;
+  padding-right: 18px;
+}
+.bottom-site img, .bottom-site i {
+  vertical-align: middle;
+}
+.address, .address:first-of-type {
+  margin-bottom: 11px;
+}

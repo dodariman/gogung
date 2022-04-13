@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home>소장품안내>소장품검색|국립고궁박물관</title>
+    <link rel="stylesheet" href="css/searchstyle.css">
+</head>
+
+<body>
+    <!-- S: skip -->
+    <div class="skip-navi">
+        <ul>
+          <li><a href="#gnb">주 메뉴 바로가기</a></li>
+          <li><a href="#contents">본문 바로가기</a></li>
+        </ul>
+      </div>
+    <!-- E: skip -->
+    <div class="wrap">
+        <!-- S: header -->
+        <header class="header">
+            <!--S: logo-->
+            <h1 class="logo">
+                <a href="index.html">
+                    <img src="images/header/logo.png" alt="국립고궁박물관">
+                </a>
+            </h1>
+            <!-- E: logo -->
+            <!-- S: header-top -->
+            <div class="header-top">
+                <!-- S: 검색창 -->
+                <form class="search">
+                    <fieldset>
+                        <legend class="blind">통합검색</legend>
+                        <label for="search-text" class="blind">검색어</label>
+                        <input type="text" id="search-text" class="search-text">
+                        <button class="search-btn"></button>
+                    </fieldset>
+                </form>
+                <!-- E: 검색창 -->
+                <!-- S: 탑 메뉴 -->
+                <ul class="utill">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">본인인증&lpar;회원가입&rpar;</a></li>
+                    <li><a href="#">원격지원</a></li>
+                    <li class="language"><a href="#">LANGUAGE</a></li>
+                    <li><a href="https://www.innogov.go.kr/" target="_blank"><img src="images/header/innogov.jpg"
+                                alt="보다나은 정부 사이트 바로가기"></a></li>
+                </ul>
+                <!-- E: 탑 메뉴 -->
+            </div>
+            <!-- E: header-top -->
+            <!--S: header-navi -->
+            <div class="navigation-bg">
+                <p><span>국립고궁박물관</span>
+                    <span>조선왕실의 문화를 알리고 <br>
+                        보존하는 것을 임무로 하는<br>
+                        조선왕실 전문 박물관입니다&period;</span>
+                </p>
+            </div>
+            <nav class="navigation" id="gnb">
+                <h2 class="blind">메인메뉴</h2>
+                <ul class="main-menu">
+                    <li>
+                        <a href="rentInfo.html" class="menu-title">이용안내</a>
+                        <ul class="sub">
+                            <li><a href="#">관람안내</a></li>
+                            <li><a href="#">시설대관안내&sol;신청</a></li>
+                            <li><a href="#">도서실</a></li>
+                            <li><a href="#">시설현황</a></li>
+                            <li><a href="#">자주묻는질문</a></li>
+                            <li><a href="#">찾아오시는 길</a></li>
+                        </ul>
+                    </li> <!-- 1 -->
+                    <li>
+                        <a href="exhibition.html" class="menu-title">전시</a>
+                        <ul class="sub">
+                            <li><a href="#">전시상설전시</a></li>
+                            <li><a href="#">특별전시</a></li>
+                            <li><a href="#">온라인 전시관</a></li>
+                            <li><a href="#">큐레이터추천왕실유물</a></li>
+                            <li><a href="#">수어해설영상</a></li>
+                        </ul>
+                    </li> <!-- 2 -->
+                    <li>
+                        <a href="#" class="menu-title">교육</a>
+                        <ul class="sub">
+                            <li><a href="#">고궁 배움터&sol;연간일정</a></li>
+                            <li><a href="#">교육신청</a></li>
+                            <li><a href="#">온라인 영상강의</a></li>
+                            <li><a href="#">교육자료</a></li>
+                            <li><a href="#">나의 교육 확인/취소</a></li>
+                        </ul>
+                    </li> <!-- 3 -->
+                    <li>
+                        <a href="searchList.html" class="menu-title">소장품</a>
+                        <ul class="sub">
+                            <li><a href="#">소장품 안내</a></li>
+                            <li><a href="#">왕실문화 아카이브</a></li>
+                            <li><a href="#">소장품 보존</a></li>
+                            <li><a href="#">소장품 사진&sol;열람/복제</a></li>
+                            <li><a href="#">문화재 기증&sol;기탁&sol;매도</a></li>
+                        </ul>
+                    </li> <!-- 4 -->
+                    <li>
+                        <a href="noticeList.html" class="menu-title">소식 &middot; 참여</a>
+                        <ul class="sub">
+                            <li><a href="#">새소식</a></li>
+                            <li><a href="#">행사</a></li>
+                            <li><a href="#">자원봉사</a></li>
+                            <li><a href="#">전자민원</a></li>
+                            <li><a href="#">정보공개</a></li>
+                            <li><a href="#">행정정보</a></li>
+                        </ul>
+                    </li> <!-- 5 -->
+                    <li>
+                        <a href="#" class="menu-title">학술정보</a>
+                        <ul class="sub">
+                            <li><a href="#">도록</a></li>
+                            <li><a href="#">조사연구서</a></li>
+                            <li><a href="#">학술지</a></li>
+                            <li><a href="#">학술세미나 자료</a></li>
+                            <li><a href="#">기타</a></li>
+                        </ul>
+                    </li> <!-- 6 -->
+                    <li>
+                        <a href="#" class="menu-title">박물관소개</a>
+                        <ul class="sub">
+                            <li><a href="#">인사말</a></li>
+                            <li><a href="#">역대관장</a></li>
+                            <li><a href="#">연혁</a></li>
+                            <li><a href="#">연보</a></li>
+                            <li><a href="#">조직 및 업무</a></li>
+                            <li><a href="#">소개영상</a></li>
+                        </ul>
+                    </li> <!-- 7 -->
+                </ul>
+            </nav>
+            <!-- E: header-navi -->
+            <!-- S: 스케줄 -->
+            <p class="schedule">
+                <a href="#"><img src="images/header/icon_mCha.png" alt="스케줄"></a>
+            </p>
+            <!-- E: 스케줄 -->
+        </header>
+        <!-- E: header -->
+    </div>
+    <div class="sub-img">
+        <p><img src="images/sub-searchlist/sub_img_04.jpg" alt="서브이미지"></p>
+    </div>
+    <div class="searchlist-wrap clear-fix" id="contents">
+        <!-- S: menu -->
+        <section class="searchlist-menu">
+            <h2>소장품</h2>
+            <ul>
+                <li class="menu-sub-title">
+                    <a href="#" class="sub-focus">소장품 안내
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                    <ul class="menu-sub-list">
+                        <li class="list-focus"><a href="#">소장품 검색</a></li>
+                        <li><a href="#">소장품 100선</a></li>
+                        <li><a href="#">지정문화재</a></li>
+                    </ul>
+                </li>
+                <li class="menu-sub-title">
+                    <a href="#">왕실문화 아카이브
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                    <ul class="menu-sub-list display-none">
+                        <li><a href="#">조선왕조기록문화유산</a></li>
+                        <li><a href="#">수장고 속 왕실유물 이야기</a></li>
+                        <li><a href="#">한석홍 기증사진</a></li>
+                        <li><a href="#">왕실문화도감 일러스트</a></li>
+                    </ul>
+                </li>
+                <li class="menu-sub-title">
+                    <a href="#">소장품 보존
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                    <ul class="menu-sub-list display-none">
+                        <li><a href="#">재질별 보존처리</a></li>
+                        <li><a href="#">왕실유물 보존처리 이야기</a></li>
+                    </ul>
+                </li>
+                <li class="menu-sub-title">
+                    <a href="#">소장품 사진&sol;열람&sol;복제
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                    <ul class="menu-sub-list display-none">
+                        <li><a href="#">소장품 사진 이용 안내</a></li>
+                        <li><a href="#">소장품 열람&sol;복제 안내</a></li>
+                    </ul>
+                </li>
+                <li class="menu-sub-title">
+                    <a href="#">문화재기증&sol;기탁&sol;매도
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                    <ul class="menu-sub-list display-none">
+                        <li><a href="#">기증&sol;기탁 안내</a></li>
+                        <li><a href="#">매도 안내</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- E: menu -->
+            <!--S:메뉴 아이콘 -->
+            <div class="menu-icon">
+                <p><a href="#"><img src="images/sub-common/1.png" alt="">일정안내</a></p>
+                <p><a href="#"><img src="images/sub-common/2.png" alt="">관람안내</a></p>
+                <p><a href="#"><img src="images/sub-common/3.png" alt="">시설안내</a></p>
+                <p><a href="#"><img src="images/sub-common/4.png" alt="">오시는길</a></p>
+            </div>
+            <!-- E:메뉴 아이콘-->
+        </section>
+        <!-- S: contents-box  -->
+        <section class="searchlist-contents">
+            <!-- S: title -->
+            <div class="contents-title-wrap">
+                <h3 class="contents-title">소장품 검색</h3>
+                <p class="contents-navi clear-fix">
+                    <span class="navi-left">National Palace Museum of Korea</span>
+                    <span class="navi-right">Home &gt; 소장품 &gt; 소장품안내 &gt; <strong>소장품검색</strong></span>
+                </p>
+            </div>
+            <!-- E: title -->
+            <!-- S: search-bar -->
+            <form class="searchlist-search">
+                <fieldset>
+                    <legend class="blind">소장품 검색</legend>
+                    <label for="categorize" class="blind">분류</label>
+                    <select id="categorize" class="categorize">
+                        <option value="" selected>분류</option>
+                        <option value="">회화</option>
+                        <option value="">서예</option>
+                        <option value="">악기</option>
+                        <option value="">어보</option>
+                        <option value="">어책</option>
+                        <option value="">현판</option>
+                        <option value="">제구</option>
+                        <option value="">금속공예</option>
+                        <option value="">의상</option>
+                        <option value="">장신구</option>
+                        <option value="">고문서</option>
+                        <option value="">전적</option>
+                        <option value="">조각</option>
+                        <option value="">가구</option>
+                        <option value="">도자기</option>
+                        <option value="">무구</option>
+                        <option value="">노부</option>
+                        <option value="">과학기기</option>
+                        <option value="">피지초직</option>
+                        <option value="">기탁</option>
+                        <option value="">구입</option>
+                        <option value="">의궤</option>
+                        <option value="">궁궐</option>
+                        <option value="">과학</option>
+                        <option value="">공예</option>
+                        <option value="">복식</option>
+                        <option value="">의장</option>
+                        <option value="">근대매체</option>
+                        <option value="">기타</option>
+                        <option value="">왕실복식</option>
+                        <option value="">군중악무</option>
+                        <option value="">국가제례</option>
+                        <option value="">의장</option>
+                        <option value="">무구</option>
+                    </select>
+                    <label for="total" class="blind">전체</label>
+                    <select id="total" class="total">
+                        <option value="" selected>전체</option>
+                        <option value="">유물번호</option>
+                        <option value="">유물명</option>
+                        <option value="">명칭&lpar;한문&rpar;</option>
+                        <option value="">이명칭</option>
+                        <option value="">내용</option>
+                    </select>
+                    <label for="search-bar" class="blind">검색바</label>
+                    <input type="text" id="search-bar" class="search-bar">
+                    <button class="sub-search-btn">검색</button>
+                </fieldset>
+            </form>
+            <!-- E: search-bar -->
+            <!-- S: gallery -->
+            <div class="searchlist-gallery clear-fix">
+                <dl>
+                    <dt><a href="#"><img src="images/sub-searchlist/getImage.jpg" alt="유리등 사진"></a></dt>
+                    <dd class="gallery-title"><a href="#">유리등</a></dd>
+                    <dd class="gallery-info">
+                        <a href="#">투명한 유리로 만든 &lpar;구형球形&rpar;의 유리등이다&period;<br>몸체 외면에 &apos;囍&lpar;희&rpar;&apos;자와
+                            꽃무늬를 채색하여<br> 장식하였다&period; 상단 테두리에 고정하는 용도로 보이는 금속이 있으며&comma; 금속제 초꽂이와 줄이 있다&period;</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><a href="#"><img src="images/sub-searchlist/getImage2.jpg" alt="유리등 사진"></a></dt>
+                    <dd class="gallery-title"><a href="#">유리등</a></dd>
+                    <dd class="gallery-info">
+                        <a href="#">투명한 유리로 만든 &lpar;구형球形&rpar;의 유리등이다&period;<br>몸체 외면에 &apos;囍&lpar;희&rpar;&apos;자와
+                            꽃무늬를 채색하여<br> 장식하였다&period; 상단 테두리에 고정하는 용도로 보이는 금속이 있으며&comma; 금속제 초꽂이와 줄이 있다&period;</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><a href="#"><img src="images/sub-searchlist/getImage3.jpg" alt="유리등 사진"></a></dt>
+                    <dd class="gallery-title"><a href="#">유리등</a></dd>
+                    <dd class="gallery-info">
+                        <a href="#">투명한 유리로 만든 &lpar;구형球形&rpar;의 유리등이다&period;<br>몸체 외면에 &apos;囍&lpar;희&rpar;&apos;자와
+                            꽃무늬를 채색하여<br> 장식하였다&period; 상단 테두리에 고정하는 용도로 보이는 금속이 있으며&comma; 금속제 초꽂이와 줄이 있다&period;</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><a href="#"><img src="images/sub-searchlist/getImage4.jpg" alt="유리등 사진"></a></dt>
+                    <dd class="gallery-title"><a href="#">유리등</a></dd>
+                    <dd class="gallery-info">
+                        <a href="#">투명한 유리로 만든 &lpar;구형球形&rpar;의 유리등이다&period;<br>몸체 외면에 &apos;囍&lpar;희&rpar;&apos;자와
+                            꽃무늬를 채색하여<br> 장식하였다&period; 상단 테두리에 고정하는 용도로 보이는 금속이 있으며&comma; 금속제 초꽂이와 줄이 있다&period;</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><a href="#"><img src="images/sub-searchlist/getImage5.jpg" alt="유리등 사진"></a></dt>
+                    <dd class="gallery-title"><a href="#"></a>구형 유리등갓</dd>
+                    <dd class="gallery-info">
+                        <a href="#">불투명한 백색 유리로 만든 구형&rpar;球形&lpar; 등갓<br>이다&period;
+                            1883년&rpar;고종20&lpar; 미국을 방문한 보빙사<br>&rpar;報聘使&lpar; 일행은 밤거리를 환하게 밝힌 전등을 보고&comma; 조선 내 전등
+                            설비 도입을 제안하였고&comma; 1887년&lpar;고종24&rpar; 경복궁 후원의 건청궁&lpar;乾淸宮&rpar;에서 우리나라 최초로 전등의 불을
+                            밝혔다&period;</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><a href="#"><img src="images/sub-searchlist/getImage6.jpg" alt="유리등 사진"></a></dt>
+                    <dd class="gallery-title"><a href="#"></a>구형 유리등갓</dd>
+                    <dd class="gallery-info">
+                        <a href="#">불투명한 백색 유리로 만든 구형&rpar;球形&lpar; 등갓<br>이다&period;
+                            1883년&rpar;고종20&lpar; 미국을 방문한 보빙사<br>&rpar;報聘使&lpar; 일행은 밤거리를 환하게 밝힌 전등을 보고&comma; 조선 내 전등
+                            설비 도입을 제안하였고&comma; 1887년&lpar;고종24&rpar; 경복궁 후원의 건청궁&lpar;乾淸宮&rpar;에서 우리나라 최초로 전등의 불을
+                            밝혔다&period;</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><a href="#"><img src="images/sub-searchlist/getImage7.jpg" alt="유리등 사진"></a></dt>
+                    <dd class="gallery-title"><a href="#"></a>구형 유리등갓</dd>
+                    <dd class="gallery-info">
+                        <a href="#">불투명한 백색 유리로 만든 구형&rpar;球形&lpar; 등갓<br>이다&period;
+                            1883년&rpar;고종20&lpar; 미국을 방문한 보빙사<br>&rpar;報聘使&lpar; 일행은 밤거리를 환하게 밝힌 전등을 보고&comma; 조선 내 전등
+                            설비 도입을 제안하였고&comma; 1887년&lpar;고종24&rpar; 경복궁 후원의 건청궁&lpar;乾淸宮&rpar;에서 우리나라 최초로 전등의 불을
+                            밝혔다&period;</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><a href="#"><img src="images/sub-searchlist/getImage8.jpg" alt="유리등 사진"></a></dt>
+                    <dd class="gallery-title"><a href="#"></a>구형 유리등갓</dd>
+                    <dd class="gallery-info">
+                        <a href="#">불투명한 백색 유리로 만든 구형&rpar;球形&lpar; 등갓<br>이다&period;
+                            1883년&rpar;고종20&lpar; 미국을 방문한 보빙사<br>&rpar;報聘使&lpar; 일행은 밤거리를 환하게 밝힌 전등을 보고&comma; 조선 내 전등
+                            설비 도입을 제안하였고&comma; 1887년&lpar;고종24&rpar; 경복궁 후원의 건청궁&lpar;乾淸宮&rpar;에서 우리나라 최초로 전등의 불을
+                            밝혔다&period;</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><a href="#"><img src="images/sub-searchlist/getImage9.jpg" alt="유리등 사진"></a></dt>
+                    <dd class="gallery-title"><a href="#">홍색 이화문 유리등갓</a></dd>
+                    <dd class="gallery-info">
+                        <a href="#">불투명한 홍색 유리로 만든 타원형의 등갓이<br>다&period; 조명의 외부를 감싸 장식하는 용도로&comma; 몸<br>체 세 곳에는 오얏꽃
+                            무늬&lpar;李花紋&rpar;가 투명하게 장식되어 있다&period;</a>
+                    </dd>
+                </dl>
+            </div>
+            <!-- E: gallery -->
+            <!-- S: pages -->
+            <div class="searchlist-page">
+                <a href="#" class="page-move">
+                    <i class="fas fa-angle-double-left"></i>
+                </a>
+                <a href="#" class="page-move">
+                    <i class="fas fa-angle-left"></i>
+                </a>
+                <ol class="page">
+                    <li><a href="#" class="active" title="현재위치">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">6</a></li>
+                    <li><a href="#">7</a></li>
+                    <li><a href="#">8</a></li>
+                    <li><a href="#">9</a></li>
+                    <li><a href="#">10</a></li>
+                </ol>
+                <a href="#" class="page-move">
+                    <i class="fas fa-angle-right"></i>
+                </a>
+                <a href="#" class="page-move"><i class="fas fa-angle-double-right"></i></a>
+            </div>
+            <!-- S: score-->
+            <div class="score">
+                <form class="score-box1">
+                    <fieldset>
+                        <legend>
+                            <i class="far fa-check-circle"></i>
+                            현재 페이지에 대한 정보 만족도를 평가해 주세요&excl;</legend>
+                        <label for="star5" class="star5" title="매우 만족"></label>
+                        <input type="radio" id="star5" class="star" name="score">
+                        <label for="star4" class="star4" title="만족"></label>
+                        <input type="radio" id="star4" class="star" name="score">
+                        <label for="star3" class="star3" title="보통"></label>
+                        <input type="radio" id="star3" class="star" name="score" checked>
+                        <label for="star2" class="star2" title="불만족"></label>
+                        <input type="radio" id="star2" class="star" name="score">
+                        <label for="star1" class="star1" title="매우 불만족"></label>
+                        <input type="radio" id="star1" class="star" name="score">
+                        <button class="score-btn">확인</button>
+                    </fieldset>
+                </form>
+                <p class="score-box2">
+                    <span>담당부서&colon;</span> 유물과학과<br>
+                    <span>담 당 자&colon;</span> 백은경<br>
+                    <span>전화번호&colon;</span> 02&dash;3701&dash;7664
+                </p>
+            </div>
+            <!-- E: score -->
+        </section>
+    </div>
+    <!-- S: footer-bg -->
+    <div class="footer-bg">
+        <!-- S: footer -->
+        <footer class="footer">
+            <!-- S: footer-box1 -->
+            <div class="footer-box1">
+                <div>
+                    <ul class="morelink">
+                        <li><a href="https://www.e-minwon.go.kr/webs/main.jsp" target="_blank">ㆍ민원신청</a></li>
+                        <li><a href="https://www.gogung.go.kr/faq.do">ㆍ자주하는 질문</a></li>
+                        <li><a href="https://www.gogung.go.kr/private.do">ㆍ개인정보취급방침</a></li>
+                        <li><a href="https://www.gogung.go.kr/copyright.do">ㆍ저작권정책</a></li>
+                        <li><a href="https://www.gogung.go.kr/reject.do">ㆍ이메일무단수집거부</a></li>
+                        <li><a href="https://www.redwhistle.org/report/report.asp?organ=7721&RType=1"
+                                target="_blank">ㆍ성폭력
+                                신고센터</a></li>
+                        <li><a href="https://www.lost112.go.kr/" target="_blank">ㆍ경찰청 유실물 통합포털</a></li>
+                    </ul>
+                </div>
+                <!-- S: footer-right -->
+                <div class="footer-right">
+                    <label for="orgLink"></label>
+                    <select id="orgLink">
+                        <option value="">관련기관 바로가기</option>
+                    </select>
+                    <button type="button" title="새창열림" class="btn-move">&nbsp;이동&nbsp;</button>
+                </div>
+                <!-- E: footer-right -->
+            </div>
+            <!-- E: footer-box1 -->
+            <!-- S: footer-box2 -->
+            <div class="footer-box2">
+                <!-- S: bottom-l, bottom-logo -->
+                <div class="bottom-l bottom-logo">
+                    <a href="#"><img src="images/logo_btm.png" alt="국립고궁박물관 로고 이미지"></a>
+                </div>
+                <!-- E: bottom-l, bottom-logo -->
+                <!-- S: bottom-l bottom-text -->
+                <div class="bottom-l bottom-text">
+                    <address class="address">
+                        <p>03045 서울특별시 종로구 효자로 12(세종로1-57) l TEL.02-3701-7500</p><br>
+                        <p>Hyojaro 12, Jongno-gu, Seoul 03045 l TEL. 82-2-3701-7500</p>
+                    </address>
+                    <small class="copyright">COPYRIGHT &copy; 2015 NATIONAL PALACE MUSEUM OF KOREA. ALL RIGHTS
+                        RESERVED</small>
+                </div>
+                <!-- E: bottom-l bottom-text -->
+                <!-- S: bottom-r, bottom-site -->
+                <div class="bottom-r bottom-site">
+                    <a href="http://wa.or.kr/board/list.asp?BoardID=0006" target="_blank"><img
+                            src="images/footer_banner_03.png"
+                            alt="(사)한국장애인단체총연합회 한국웹접근성인증평가원 웹 접근성 우수사이트 인증마크 (WA인증마크)"></a>
+                    <a href="https://www.facebook.com/gogungmuseum/" target="_blank"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/gogungmuseum" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/accounts/login/" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/UCUiGN-UunAlsdwDIxj6fNAw" target="_blank"><i
+                            class="fa fa-youtube"></i></a>
+                    <a href="https://blog.naver.com/gogungmuseum" target="_blank"><i class="fa fa-bold"></i></a>
+                </div>
+                <!-- E: bottom-r, bottom-site -->
+            </div>
+            <!-- E: fooer-box2 -->
+        </footer>
+        <!-- E: fooer -->
+    </div>
+     <!-- E: footer-bg -->
+</body>
+
+</html>

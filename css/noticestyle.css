@@ -1,0 +1,255 @@
+@charset "utf-8";
+
+@import url("normalize.css");
+@import url("reset.css");
+@import url("utility.css");
+/* 유틸리티 스타일 */
+@import url("common.css");
+/* 공통 스타일(헤더, 푸터) */
+
+.sub-img p, .noticelist-wrap {
+    width:1240px;
+    margin: 0 auto;
+}
+/* 서브 탑 이미지 */
+.sub-img{
+    background-color: #e0c597;
+    margin-top: 115px;
+    width: 100%;
+    height: 51px;
+    overflow: hidden;
+    margin-bottom: 45px;
+}
+/* 메뉴 */
+.noticelist-menu{
+    float: left;
+    width: 270px;
+}
+.noticelist-menu h2{
+    font: 33px 'Nanum Myeongjo', serif;
+    font-weight: 600;
+    padding: 0 19px 18px;
+    text-align: center;
+    letter-spacing:-1px;
+    border-bottom: 2px solid #666;
+}
+.noticelist-menu ul a{
+    display: block;
+    letter-spacing:-0.8px;
+    font-size: 15px;
+    padding: 12px 10px;
+    border-bottom: 1px solid #ccc;
+}
+.menu-sub-title .fa-chevron-right {
+    float: right;
+    font-weight: 600;
+    font-size: 5px;
+}
+ .sub-focus, .list-focus{
+    color: #000;
+    font-weight: 600;
+}
+.list-focus{
+    background: url("../images/sub-common/ic_lnb_on.png") no-repeat 20px 40%;
+}
+.noticelist-menu ul a:hover{
+    color:#dbb671;                      
+}
+.menu-sub-list li a{
+    padding-left: 30px;
+}
+.display-none{
+    display: none;
+}
+/* 메뉴 아이콘 */
+.menu-icon {
+    margin-top: 15px;
+    text-align: center;
+}
+.menu-icon p {
+    padding: 7px 0px;
+    margin: 0 2px;
+    color: #666;
+    font-size: 13px;
+    margin-bottom: 5px;
+    letter-spacing: -0.3px;
+    line-height: 18px;
+    width: 22%;
+    display: inline-block;
+}
+/* 공지사항 타이틀*/
+.noticelist-contents{
+    float: right;
+    width: 900px;
+}
+.contents-title {
+    font: 32px 'Nanum Myeongjo', serif;
+    font-weight: 400;
+    color: #000;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #666;
+    letter-spacing: -1px;
+}
+.contents-navi{
+    padding: 12px 0; 
+    border-bottom: 1px solid #ccc;
+}
+.navi-left {
+    float: left;
+}
+.navi-right {
+    float: right;
+}
+.navi-right strong{
+    font-weight: bold;
+}
+/* 검색창 */
+.noticelist-search fieldset {
+    border: 2px solid #ddd;
+    padding: 20px 0;
+    text-align: center;
+    background-color: #f7f7f7;
+    margin: 40px 2px 40px;
+    font-size: 14px;
+    color: #373737;
+    vertical-align:middle;
+}
+.categorize {
+    padding: 5px;
+    width: 115px;
+}
+.search-bar {
+    font-size: 12px;
+    padding: 0 5px;
+    width: 360px;
+    height: 30px;
+    border: 1px solid #b5b5b5;
+}
+.sub-search-btn {
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    padding: 6.5px 18px;
+}
+/* 공지사항 목록 */
+.noticelist-list{
+    width: 100%;
+    border-top:2px solid #b39c74;
+    margin-bottom:30px;
+}
+.noticelist-list th{
+    border-bottom: 1px solid #b39c74;
+    border-right: 1px solid #b39c74;
+    color:#795538 ;
+    font-size: 14px;
+    font-weight: bold;
+    background-color:#f4eee5;
+    padding: 7px 0;
+}
+.noticelist-list td {
+    border-bottom: 1px solid  #efdfce ;
+    border-right: 1px solid  #efdfce ;
+    padding: 7px 15px;
+    line-height: 15px;
+    text-align: center;
+}
+.noticelist-list td:nth-child(2){
+    text-align:left;
+}
+.notice-col col:first-of-type {
+    width: 65px;
+}
+.notice-col col:nth-of-type(n+3) {
+    width: 110px;
+}
+/* 페이지 */
+.noticelist-page *{
+    display: inline-block;
+}
+.noticelist-page {
+    text-align: center;
+    margin: 20px auto;
+}
+.noticelist-page .fas {
+    color: #cacacf;
+    font-weight: 600;
+}
+.noticelist-page a {
+    font-size: 16px;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    border: 1px solid #d1d2d6;
+    text-align: center;
+    color: #565656;
+    margin: 0 4px;
+}
+.page li:first-of-type a{
+    font-weight: 600;
+}
+.page li:first-of-type a, .page a:hover{
+    background-color: #333;
+    color: #fff;
+}
+.page-move:hover{
+    border: 1px solid #000;
+}
+/* 별점 관리 */
+.score {
+    height: 102px;
+    padding: 20px 10px;
+    margin: 45px 0 60px 0;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+}
+.score-box1, .score-box2 {
+    float: left;
+}
+.score-box1 {
+    width: 700px;
+}
+.score legend {
+    color: #606060;
+    margin:0 0 15px 10px;
+}
+.score label{
+    display: inline-block;
+    font-family: 'Nanum Gothic';
+    background: url("../images/sub-common/star.png")no-repeat top left;
+    height: 14px;
+    margin: 5px 5px 0 15px;
+}
+.score input {
+    margin-right: 15px;
+}
+.star5 {
+    width: 79px;
+}
+.star4 {
+    width: 64px;
+}
+.star3 {
+    width: 47px;
+}
+.star2 {
+    width: 32px;
+}
+.star1 {
+    width: 16px;
+}
+.score-btn {
+    width: 65px;
+    height: 24px;
+    color: #fff;
+    background-color: #666;
+    font-weight: bold;
+    margin-left: 15px;
+}
+.score-box2 {
+    font-family: 'Nanum Gothic';
+    line-height: 20px;
+    color: #454545;
+}
+.score-box2 span {
+    color: #707070
+}

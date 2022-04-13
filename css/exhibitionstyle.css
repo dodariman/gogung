@@ -1,0 +1,292 @@
+@charset "utf-8";
+
+@import url("normalize.css");
+@import url("reset.css");
+@import url("utility.css");
+/* 유틸리티 스타일 */
+@import url("common.css");
+/* 공통 스타일(헤더, 푸터) */
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+
+
+.sub-img {
+  background-color: #e0c597;
+  height: 51px;
+  margin-bottom: 45px;
+  margin-top: 115px;
+}
+
+.sub-img-inner {
+  width: 1240px;
+  margin: 0 auto;
+  height: 51px;
+  overflow: hidden;
+}
+
+.content-wrap {
+  width: 1240px;
+  margin: 0 auto;
+}
+
+/* lnb---------------------------------------- */
+.lnb {
+  float: left;
+  width: 270px;
+}
+
+.lnb-title {
+  font: 600 32px 'Nanum Myeongjo', serif;
+  letter-spacing: -1px;
+  text-align: center;
+  padding: 0 19px 18px 19px;
+  border-bottom: 2px solid #666;
+}
+
+.lnb-menu a {
+  padding: 13px 10px;
+  display: block;
+  letter-spacing: -0.8px;
+  border-bottom: 1px solid #ccc;
+}
+
+.sub-menu a {
+  padding-left: 27px;
+}
+
+.lnb-menu>li>a>i {
+  float: right;
+  font-weight: 600;
+  font-size: 5px;
+}
+
+.lnb-menu a:hover {
+  color: #dbb671;
+}
+
+.focus {
+  background: url("../images/exhibition/ic_lnb_on.png") no-repeat 17px center;
+}
+
+.lnb-menu span,
+.lnb a:focus,
+.focus {
+  font-weight: bold;
+}
+
+/* lnb-banner */
+.lnb-banner {
+  margin-top: 15px;
+}
+
+.lnb-banner p {
+  display: block;
+  padding: 7px 10px 40px 4px;
+  margin-bottom: 5px;
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+
+/* content------------------------------------- */
+.content {
+  float: right;
+  width: 900px;
+}
+
+/* content-title */
+.title h3 {
+  font: 400 32px "Nanum Myeongjo", serif;
+  padding: 0 0 18px 0;
+  letter-spacing: -1.5px;
+}
+
+.subtitle {
+  border-top: 2px solid #666;
+  border-bottom: 1px solid #ccc;
+  height: 44px;
+  padding: 16px 0px;
+}
+
+.subtitle span:last-child {
+  float: right;
+}
+
+strong {
+  color: #000;
+  font-weight: bold;
+}
+
+/* content-section  */
+.section {
+  margin-top: 40px;
+  letter-spacing: -0.8px;
+  overflow: hidden;
+}
+
+.section h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* section-title */
+
+.section-title p {
+  line-height: 27px;
+}
+
+/* section-map */
+.section-map {
+  background: url("../images/exhibition/bg_museum06.png") no-repeat top center;
+  width: 900px;
+  height: 514px;
+  position: relative;
+  padding: 0 40px;
+  padding-top: 145px;
+}
+
+.map-left {
+  float: left;
+  width: 290px;
+  height: 291px;
+  padding-top: 110px;
+}
+
+.map-left>ul>li:first-child {
+  font-size: 80px;
+  font-style: italic;
+}
+
+.map-left li>a {
+  padding: 0 10px;
+  background-color: #c95168;
+  border: 1px solid #b4495e;
+  color: #fff;
+  line-height: 30px;
+  width: 194px;
+  height: 30px;
+  text-align: left;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.map-left li:last-child>a {
+  background-color: #58b9da;
+  border: 1px solid #4fa6c3;
+}
+
+.map-left li>a:hover, .map-left li>a:active{
+  background-color: #c95168;
+  border: 1px solid #b4495e;
+}
+
+.map-right img {
+  float: right;
+  width: 432px;
+  height: 298px;
+}
+
+/* section-roll */
+.roll {
+  position: relative;
+  line-height: 20px;
+}
+
+.roll>p {
+  float: left;
+}
+
+.box {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 253px;
+  height: 293px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  padding: 25px 20px;
+  display: none;
+}
+
+.roll strong {
+  display: block;
+  color: #f5c266;
+  font-size: 16px;
+  font-family: 'Nanum Gothic', 'NotoR';
+  font-weight: normal;
+  line-height: 22px;
+}
+
+.box span:nth-child(2) {
+  line-height: 25px;
+}
+
+.roll-box2 {
+  left: 293px;
+}
+
+/* section-place */
+.section-place p {
+  margin-bottom: 10px;
+}
+
+/* score---------------------------- */
+.score {
+  height: 102px;
+  padding: 20px 10px;
+  margin: 45px 0 60px 0;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+}
+.score-box1, .score-box2 {
+  float: left;
+}
+.score-box1 {
+  width: 700px;
+}
+.score legend {
+  color: #606060;
+  margin:0 0 15px 10px;
+}
+.score label{
+  display: inline-block;
+  font-family: 'Nanum Gothic';
+  background: url("../images/sub-common/star.png")no-repeat top left;
+  height: 14px;
+  margin: 5px 5px 0 15px;
+}
+.score input {
+  margin-right: 15px;
+}
+.star5 {
+  width: 79px;
+}
+.star4 {
+  width: 64px;
+}
+.star3 {
+  width: 47px;
+}
+.star2 {
+  width: 32px;
+}
+.star1 {
+  width: 16px;
+}
+.score-btn {
+  width: 65px;
+  height: 24px;
+  color: #fff;
+  background-color: #666;
+  font-weight: bold;
+  margin-left: 15px;
+}
+.score-box2 {
+  font-family: 'Nanum Gothic';
+  line-height: 20px;
+  color: #454545;
+}
+.score-box2 span {
+  color: #707070
+}
